@@ -56,30 +56,13 @@ window.onload = function() {
 			
             console.log('error');
 		})
-	
-		fetch('http:coronavirus-19-api.herokuapp.com/countries/south africa')
-	.then(function (resp) {
-		return resp.json()
-	})
-	.then(function (data) {
-	   
-		document.getElementById('confirmed_cases').innerHTML = data.cases;
-		document.getElementById('active_cases').innerHTML = data.active;
-		document.getElementById('today_cases').innerHTML = data.todayCases;
-		document.getElementById('cases_ratio').innerHTML = data.casesPerOneMillion;
-		document.getElementById('recovered').innerHTML = data.recovered;
-		document.getElementById('deaths').innerHTML = data.deaths;
-		document.getElementById('today_deaths').innerHTML = data.todayDeaths;
-		document.getElementById('deaths_ratio').innerHTML = data.deathsPerOneMillion;
-		document.getElementById('critical').innerHTML = data.critical;
-		document.getElementById('tests').innerHTML = data.totalTests;
-		document.getElementById('tests_ratio').innerHTML = data.testsPerOneMillion;
-		console.log(data);
-
-	})
-	.catch(function () {
-		
-		console.log('error');
-	})
+		fetch("https://pomber.github.io/covid19/timeseries.json")
+			.then(response => response.json())
+			.then(data => {
+				data["South Africa"].forEach(({date, confirmed, recovered, deaths}) =>
+					document.getElementById('recovered').innerHTML = recovered,
+					
+				);
+			});
 
 	}
