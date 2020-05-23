@@ -57,7 +57,7 @@ window.onload = function() {
             console.log('error');
 		})
 	
-		fetch('https:coronavirus-19-api.herokuapp.com/countries/south africa')
+		fetch('http:coronavirus-19-api.herokuapp.com/countries/south africa')
 	.then(function (resp) {
 		return resp.json()
 	})
