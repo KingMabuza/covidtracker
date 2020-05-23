@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgb(24, 23, 29);
+    overflow: hidden;
+}
+
+.intro{
+    margin-top: 25vh;
+}
+footer{
+    padding-top: 100px;
+}
+
+@media(max-height:550px){
+    .intro{
+        margin-top: 10vh;
+    }
+    footer{
+        padding-top: 30px;
+    }
+}
