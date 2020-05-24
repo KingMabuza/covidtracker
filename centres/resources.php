@@ -46,7 +46,7 @@
         </th>
         </tr>
    <?php
-    $conn = mysqli_connect("kil9uzd3tgem3naa.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "	cz7q34yktx3h32gt","yyh2xzc366iqhv22", "k8lgv4bgqdjlvbqn");
+    $conn = mysqli_connect("kil9uzd3tgem3naa.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "cz7q34yktx3h32gt","cn7z19dbn14upg6l", "k8lgv4bgqdjlvbqn");
     $sql = "SELECT * FROM centres";
     $result = $conn-> query($sql);
 
@@ -62,17 +62,6 @@
    ?>
    </table>
     </div>
-    <?php
-    $sql = "CREATE TABLE centres(
-    province TEXT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    hospital TEXT NOT NULL,
-    address TEXT NOT NULL,
-    phone INT NOT NULL UNIQUE
-)";
-    ?>
-    <?php
-    $sql = "INSERT INTO persons (province, hospital, address, phone) VALUES ('Gauteng', 'Charlotte Maxeke Hospital', 'Parktown, Johannesburg,2193', '0114884911')";
-    ?>
     
         <div class="container">
         <a class="twitter-timeline" href="https://twitter.com/HealthZA?ref_src=twsrc%5Etfw">Tweets by HealthZA</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
