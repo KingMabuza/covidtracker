@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources | CovidMonitor</title>
     <link rel="stylesheet" type="text/css" href="css/resources.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 </head>
 <body>
     <nav class="red-text transparent z-depth-0"><h4>Covid-19 Monitor</h4></nav>
@@ -32,37 +33,16 @@
         <br>
         <div class="container"><iframe width="100%" height="450" src="https://www.youtube.com/embed/wYuRl1dfn_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <br>
-        <div class="container">
-        <table>
-        <tr>
-        <th>
-        Province
-        </th>
-        <th>
-        Hospital
-        </th>
-        <th>
-        Address
-        </th>
-        </tr>
-   <?php
-    $conn = mysqli_connect("kil9uzd3tgem3naa.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "cz7q34yktx3h32gt","cn7z19dbn14upg6l", "k8lgv4bgqdjlvbqn");
-    $sql = "SELECT * FROM centres";
-    $result = $conn-> query($sql);
 
-    if($result ->num_rows > 0){
-        while($row = $result-> fetch_assoc()){
-            echo "<tr><td>" . $row["Province"] . "</td><td>" . $row["Hospital"] . "</td><td>" . $row["Address"] . "</td> </tr>" ;
-        }
-    }
-    else{
-        echo "No Results";
-    }
-    $conn-> close();
-   ?>
-   </table>
+        <div class="container">
+   <form action='sites.php' method='post'>
+   <input type='text' name='search'>
+   <input type='submit' name='submit' value='search'>
+   </form>
+
+
     </div>
-    
+
         <div class="container">
         <a class="twitter-timeline" href="https://twitter.com/HealthZA?ref_src=twsrc%5Etfw">Tweets by HealthZA</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
@@ -79,6 +59,8 @@
             </div>
             Developed by students at the University of Johannesburg. Data collated from DSFSI
         </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
