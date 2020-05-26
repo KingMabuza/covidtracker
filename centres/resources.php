@@ -6,7 +6,7 @@
     <title>Resources | CovidMonitor</title>
     <link rel="stylesheet" type="text/css" href="css/resources.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 </head>
 <body>
@@ -35,17 +35,14 @@
         <br>
 
         <div class="container">
-   <form action='sites.php' method='post'>
-   <input type='text' name='search'>
-   <input type='submit' name='submit' value='search'>
-   </form>
-
-
-    </div>
-
-        <div class="container">
         <a class="twitter-timeline" href="https://twitter.com/HealthZA?ref_src=twsrc%5Etfw">Tweets by HealthZA</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
+
+        <div class='container red-text center'>
+        <p>Emergency Hotline: 0800 029 999</p>
+        <p>WhatsApp Support Line: 0600 123456</p>
+        </div>
+
         <footer class="white-text center">
             <div class="container">
             <?php
@@ -62,5 +59,6 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/init.js">
 </body>
 </html>
