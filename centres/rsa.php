@@ -17,6 +17,7 @@
         </h4>
     </nav>
     <div class="center"><img src="flags/flags/png/south-africa.png" height="80px"></div>
+
     <?php
     echo "<a href='index.php'>
     <span class='material-icons left white-text'>
@@ -24,6 +25,7 @@
         </span><span class='white-text'>Back</span>
     </a>";
     ?>
+
     <div class="container">
         <div class="card z-depth-2" style="background-color: rgb(35, 33, 43);">
             <div class=" card-title center white-text">
@@ -56,16 +58,7 @@
                 </div>
             </div>
 
-            <div class="container">
-                <div class="card z-depth-2" style="background-color: rgb(35, 33, 43);">
-                    <div class=" card-title center white-text">
-                        Cases/1m:
-                    </div>
-                    <div class=" card-content">
-                        <p class="center-align grey-text" id="cases_ratio"></p>
-                    </div>
-                </div>
-            </div>
+
 
                 <div class="container">
                     <div class="card z-depth-2" style="background-color: rgb(35, 33, 43);">
@@ -99,16 +92,7 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="card z-depth-2" style="background-color: rgb(35, 33, 43);">
-                <div class=" card-title center white-text">
-                    Deaths/1m:
-                </div>
-                <div class=" card-content">
-                    <p class="center-align grey-text" id="deaths_ratio"></p>
-                </div>
-            </div>
-        </div>
+
 
         <div class="container">
             <div class="card z-depth-2" style="background-color: rgb(35, 33, 43);">
@@ -131,21 +115,18 @@
                 </div>
             </div>
         </div>
-
-        <div class="container">
-            <div class="card z-depth-2" style="background-color: rgb(35, 33, 43);">
-                <div class=" card-title center white-text">
-                    Tests/1m:
-                </div>
-                <div class=" card-content">
-                    <p class="center-align grey-text" id="tests_ratio"></p>
-                </div>
-            </div>
-        </div>
     
         <div id="container" style="height:70vh;">
         <canvas id="provincialChart"></canvas>
         </div>
+        <br>
+        <div class='container red-text center'>
+        <p>Emergency Hotline: 0800 029 999</p>
+        <p>WhatsApp Support Line: 0600 123456</p>
+        </div>
+         <div class='container'>
+           <p class='white-text' id='timestamp'></p>
+         </div>
         <br>
         <footer class="white-text center">
             <div class="container">
