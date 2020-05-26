@@ -23,46 +23,75 @@
         </a>";
         ?>
     <h5 class="white-text">What is COVID-19?</h5>
-    <P class="white-text">COVID-19 is a new respiratory disease that has been rapidly spreading around the world, this disease is caused by a coronavirus. COVID-19 is short for 'coronavirus disease 2019.'</P>
-    <ul class="white-text">
-        <li>The virus is thought to spread mainly between people who are in close contact with one another and through respiratory droplets produced when an infected person coughs or sneezes.</li>
-        <li>People are most contagious when they are the sickest. But those who don't have a lot of symptoms can still pass the virus to others.</li>
-        <li>There is currently no vaccine or cure for COVID-19 but researchers are working hard to find one.</li>
+    <P class="grey-text">Short for Corona-virus disease 2019, COVID-19 or SARS_CoV-2 and informally the Wuhan/Chinese Virus is a new respiratory disease, which is part of the coronavirus' family, first discovered in the city of Wuhan, China and has been rapidly spreading around the world, to become a pandemic.</P>
+    <ul class="grey-text">
+        <li>As a coronavirus, COVID-19 is zoonotic, meaning it is transmitted across to people from animals, it is believed COVID-19 was transmitted from bats, between people the disease is thought to spread mainly between those who are in close contact with one another and through respiratory droplets produced when an infected person coughs or sneezes.</li>
+        <li>It is highly important that one is aware of their health as those who are asymptomatic can unknowingly transmit the disease.</li>
+        <li>Currently no vaccine or cure for COVID-19 has been found but researchers are working hard to find one.</li>
     </ul>
 
     <h5 class="white-text">COVID-19 Symptoms</h5>
-    <p class="white-text">COVID-19 is a new disease that affects individuals in different ways. Symptoms can range from mild to severe illness. Symptoms may take up to 2-14days after exposure to appear and this include:</p>
+    <p class="grey-text">The has been no established symptom pattern as the disease affects individuals in different ways. Symptoms can range from mild to severe illness. Symptoms may take up to 2-14days after exposure to appear and this include:</p>
     <ul class="white-text">
-        <li>Cough</li>
-        <li>Shortness of breath</li>
-        <li>Muscle Pain</li>
-        <li>Sore Throat</li>
-        <li>Headache</li>
-        <li>Loss of taste or smell</li>
-        <li>Fever</li>
-        <li>Chills</li>
-        <li>Repeated shaking with chills</li>
+        <h6><b>Systemic:</b></h6>
+        <li class="grey-text">Fever</li>
+        <li class="grey-text">Fatigue</li>
+        <li class="grey-text">Muscle Pain</li>
+        <li class="grey-text">Chills</li>
+        <li class="grey-text">Repeated shaking with chills</li>
+        <li class="grey-text">Headache</li>
+        <li class="grey-text">Loss of taste or smell</li>
+
+        <h6><b>Respiratory:</b></h6>
+        <li class="grey-text">Sneezing</li>
+        <li class="grey-text">Dry Cough</li>
+        <li class="grey-text">Shortness of breath</li>
+        <li class="grey-text">Sore Throat</li>
+        <li class="grey-text">Runny Nose</li>
+
+        <h6><b>Kidneys:</b></h6>
+        <li class="grey-text">Decreased function</li>
+
+        <h6><b>Circulatory System</b></h6>
+        <li class="grey-text">Decreased white cells</li>
+
+        <h6><b>Intestines</b></h6>
+        <li class="grey-text">Diarrhea</li>
+
     </ul>
 
-    <p class="white-text"> If you develop the following symptoms get medical attention immediately.</p>
-    <ul class="white-text">
+    <p class="white-text">Immediate medical attention may be required if you have the following symptoms:</p>
+    <ul class="grey-text">
         <li>Trouble breathing</li>
-        <li>Persistant pain or pressure in the chest</li>
+        <li>New Confusion</li>
+        <li>Inability to wake or stay awake</li>
         <li>Bluish lips or face</li>
-        <li>Inability to arouse</li>
+        <li>Persistent pain or pressure in the chest</li>
     </ul>
 
     <h5 class="white-text">Prevention</h5>
     <p class="white-text">To help prevent the spread of COVID-19, everyone should:</p>
-    <ul class="white-text">
-        <li>Clean your hands, with either soap and water for 20seconds or a hand sanitizer that contains at least 60% alcohol. </li>
-        <li>Avoid close contact with anyone who is sick</li>
-        <li>Stay at home as much as possible</li>
-        <li>Put atleast 1meter between you and other people</li>
-        <li>Cover your mouth and nose with a face mask when around others</li>
-        <li>Cover your cough or sneeze with a tissue</li>
-        <li>Clean and disinfect frequently touched objects and surfaces daily</li>
+    <ul class="grey-text">
+        <li>Clean their hands, with either soap and water for 20seconds or a hand sanitizer that contains at least 60% alcohol. </li>
+        <li>Avoid close contact with anyone who is sick.</li>
+        <li>Stay at home as much as possible.</li>
+        <li>Put at least 1meter between you and other people.</li>
+        <li>Cover your mouth and nose with a face mask when around others.</li>
+        <li>Cover your cough or sneeze with a tissue.</li>
+        <li>Clean and disinfect frequently touched objects and surfaces daily.</li>
     </ul>
+
+
+       <p class='white-text'>If you believe you or someone you know may have Covid-19 based on the above symptoms,enter your province to find testing sites near you </p>
+       <form action='sites.php' method='post'>
+       <input type='text' name='search' placeholder='province'class='grey-text' required>
+       <input type='submit' name='submit' value='search' class='btn'>
+       </form>
+
+       <div class='container red-text center'>
+       <p>Emergency Hotline: 0800 029 999</p>
+       <p>WhatsApp Support Line: 0600 123456</p>
+       </div>
 
     <footer class="white-text center">
         <div class="container">
