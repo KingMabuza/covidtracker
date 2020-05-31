@@ -75,10 +75,8 @@ window.onload = function() {
 				if(death3 <0){
 					document.getElementById('today_deaths').innerHTML = 0;
 				}
-                                if(data[data.length - 1].critical_icu == ""){
-                                        critical.innerHTML = "N/A";
 				console.log(data);
-	}
+	})
 			//recovered,active cases
 		fetch("https://covid19.mathdro.id/api/countries/south africa/recovered")
 			.then(function (resp) {
@@ -89,4 +87,4 @@ window.onload = function() {
 				document.getElementById('active_cases').innerHTML = data[0].active,
 				console.log(data);
 			})
-})
+}
