@@ -68,13 +68,15 @@ window.onload = function() {
 			.then(function (data) {
 				let death3 = data[data.length -1].deaths - data[data.length -2].deaths;
 				document.getElementById('tests').innerHTML = data[data.length - 1].cumulative_tests,
-				document.getElementById('critical').innerHTML = data[data.length - 1].critical_icu,
+				let critical = document.getElementById('critical').innerHTML = data[data.length - 1].critical_icu,
 				document.getElementById('deaths').innerHTML = data[data.length - 1].deaths,
 				document.getElementById('today_deaths').innerHTML = death3,
 				document.getElementById('timestamp').innerHTML = 'last update: ' + data[data.length - 1].date;
 				if(death3 <0){
 					document.getElementById('today_deaths').innerHTML = 0;
 				}
+                                if(critical == ""){
+                                        critical.innerHTML = "N/A";
 				console.log(data);
 	})
 			//recovered,active cases
