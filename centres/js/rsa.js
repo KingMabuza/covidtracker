@@ -75,6 +75,9 @@ window.onload = function() {
 				if(death3 <0){
 					document.getElementById('today_deaths').innerHTML = 0;
 				}
+				if(data[data.length - 1].critical_icu == ''){
+					document.getElementById('critical').innerHTML = 'N/A';
+				}
 				console.log(data);
 	})
 			//recovered,active cases
