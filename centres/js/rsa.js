@@ -89,4 +89,4 @@ window.onload = function() {
 				document.getElementById('active_cases').innerHTML = data[0].active,
 				console.log(data);
 			})
-}
+})
