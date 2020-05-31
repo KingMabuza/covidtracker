@@ -78,7 +78,7 @@ window.onload = function() {
                                 if(data[data.length - 1].critical_icu == ""){
                                         critical.innerHTML = "N/A";
 				console.log(data);
-	})
+	}
 			//recovered,active cases
 		fetch("https://covid19.mathdro.id/api/countries/south africa/recovered")
 			.then(function (resp) {
