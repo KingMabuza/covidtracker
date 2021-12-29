@@ -36,16 +36,7 @@
             </div>
         </div>
     </div>
-        <div class="container">
-            <div class="card z-depth-2" style="background-color: rgb(35, 33, 43);">
-                <div class=" card-title center white-text">
-                    Active Cases:
-                </div>
-                <div class=" card-content">
-                    <p class="center-align grey-text" id="active_cases"></p>
-                </div>
-            </div>
-        </div>
+        
 
             <div class="container">
                 <div class="card z-depth-2" style="background-color: rgb(35, 33, 43);">
@@ -59,17 +50,6 @@
             </div>
 
 
-
-                <div class="container">
-                    <div class="card z-depth-2" style="background-color: rgb(35, 33, 43);">
-                        <div class=" card-title center white-text">
-                            Recovered:
-                        </div>
-                        <div class=" card-content">
-                            <p class="center-align grey-text" id="recovered"></p>
-                        </div>
-                    </div>
-                </div>
         <div class="container">
             <div class="card z-depth-2" style="background-color: rgb(35, 33, 43);">
                 <div class=" card-title center white-text">
@@ -88,19 +68,6 @@
                 </div>
                 <div class=" card-content">
                     <p class="center-align grey-text" id="today_deaths"></p>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="container">
-            <div class="card z-depth-2" style="background-color: rgb(35, 33, 43);">
-                <div class=" card-title center white-text">
-                    Critical:
-                </div>
-                <div class=" card-content">
-                    <p class="center-align grey-text" id="critical"></p>
                 </div>
             </div>
         </div>
