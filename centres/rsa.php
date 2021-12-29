@@ -139,7 +139,7 @@
             </a>";
             ?>
             </div>
-            Developed by students at the University of Johannesburg. Data collated from DSFSI
+            Developed by Andiswa Mabuza at the University of Johannesburg. Data collated from DSFSI
         </footer>
     <script type="text/javascript" src="js/rsa.js"></script>
     <script type="text/javascript" src="js/Chart.min.js"></script>
